@@ -1,9 +1,11 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\VehiculeController;
 use App\Http\Controllers\ChauffeurController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/',[VehiculeController::class,'showVehicule']);
 
@@ -30,3 +32,16 @@ Route::post('/updatestoreclient',[ClientController::class,'updatestoreclient']);
 Route::get('/delete-client/{id}',[ClientController::class,'deleteclient']);
 
 Route::get('/payement',[ClientController::class,'index2']);
+
+
+
+
+Auth::routes();
+
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
