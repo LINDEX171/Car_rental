@@ -38,9 +38,9 @@
 
       <div class="overlay" data-overlay></div>
 
-      <a href="#" class="logo">
+     <!-- <a href="#" class="logo">
         <img src="./assets/images/logo.svg" alt="Ridex logo">
-      </a>
+      </a> -->
 
       <nav class="navbar" data-navbar>
         <ul class="navbar-list">
@@ -54,7 +54,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>About us</a>
+            <a href="#about" class="navbar-link" data-nav-link>About us</a>
           </li>
 
           <li>
@@ -67,7 +67,7 @@
       <div class="header-actions">
 
         <div class="header-contact">
-          <a href="tel:88002345678" class="contact-link">8 800 234 56 78</a>
+          <a href="tel:88002345678" class="contact-link">+221 77 419 19 26</a>
 
           <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
         </div>
@@ -75,7 +75,7 @@
         <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
           <ion-icon name="car-outline"></ion-icon>
 
-          <span id="aria-label-txt">Explore cars</span>
+          <span id="aria-label-txt">Explorer les voitures</span>
         </a>
 
         <a href="/login" class="btn user-btn" aria-label="Profile">
@@ -112,11 +112,11 @@
             <h2 class="h1 hero-title">Yobalema</h2>
 
             <p class="hero-text">
-              Live in New York, New Jerset and Connecticut!
+                Profitez de nos services dans tous les 14 régions du Sénegal !!!
             </p>
           </div>
 
-          <div class="hero-banner"></div>
+          <div class="hero-banner"> </div>
 
          <!-- <form action="" class="hero-form">
 
@@ -158,13 +158,9 @@
         <div class="container">
 
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Featured cars</h2>
+            <h2 class="h2 section-title">Nos Voitures</h2>
 
-            <a href="#" class="featured-car-link">
-              <span>View more</span>
 
-              <ion-icon name="arrow-forward-outline"></ion-icon>
-            </a>
           </div>
 
           <ul class="featured-car-list">
@@ -214,6 +210,10 @@
                       <li class="card-list-item">
                         <ion-icon name="person-outline"></ion-icon>
                         <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
+                      </li>
+                      <li class="card-list-item">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <span class="card-item-text">{{ $vehicule->matricule }}</span>
                       </li>
 
                     </ul>
@@ -279,6 +279,10 @@
                         <ion-icon name="person-outline"></ion-icon>
                         <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
                       </li>
+                      <li class="card-list-item">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <span class="card-item-text">{{ $vehicule->matricule }}</span>
+                      </li>
 
                     </ul>
 
@@ -340,6 +344,10 @@
                       <li class="card-list-item">
                         <ion-icon name="person-outline"></ion-icon>
                         <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
+                      </li>
+                      <li class="card-list-item">
+                        <ion-icon name="car-outline"></ion-icon>
+                        <span class="card-item-text">{{ $vehicule->matricule }}</span>
                       </li>
 
                     </ul>
@@ -404,6 +412,10 @@
                           <li class="card-list-item">
                             <ion-icon name="person-outline"></ion-icon>
                             <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
+                          </li>
+                          <li class="card-list-item">
+                            <ion-icon name="car-outline"></ion-icon>
+                            <span class="card-item-text">{{ $vehicule->matricule }}</span>
                           </li>
 
                         </ul>
@@ -470,6 +482,10 @@
                               <ion-icon name="person-outline"></ion-icon>
                               <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
                             </li>
+                            <li class="card-list-item">
+                                <ion-icon name="car-outline"></ion-icon>
+                                <span class="card-item-text">{{ $vehicule->matricule }}</span>
+                              </li>
 
                           </ul>
 
@@ -537,6 +553,10 @@
                               <ion-icon name="person-outline"></ion-icon>
                               <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
                             </li>
+                            <li class="card-list-item">
+                                <ion-icon name="car-outline"></ion-icon>
+                                <span class="card-item-text">{{ $vehicule->matricule }}</span>
+                              </li>
 
                           </ul>
 
@@ -604,6 +624,10 @@
                               <ion-icon name="person-outline"></ion-icon>
                               <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
                             </li>
+                            <li class="card-list-item">
+                                <ion-icon name="car-outline"></ion-icon>
+                                <span class="card-item-text">{{ $vehicule->matricule }}</span>
+                              </li>
 
                           </ul>
 
@@ -670,6 +694,10 @@
                               <ion-icon name="person-outline"></ion-icon>
                               <span class="card-item-text">chauffeur: {{ $vehicule->chauffeur->nom }}</span>
                             </li>
+                            <li class="card-list-item">
+                                <ion-icon name="car-outline"></ion-icon>
+                                <span class="card-item-text">{{ $vehicule->matricule }}</span>
+                              </li>
 
                           </ul>
 
@@ -835,11 +863,10 @@
       <!--
         - #GET START
       -->
-
-      <section class="section get-start">
+      <section class="section get-start" id="about">
         <div class="container">
 
-          <h2 class="h2 section-title">Get started with 4 simple steps</h2>
+          <h2 class="h2 section-title">Commencez en 4 étapes simples</h2>
 
           <ul class="get-start-list">
 
@@ -847,16 +874,14 @@
               <div class="get-start-card">
 
                 <div class="card-icon icon-1">
-                  <ion-icon name="person-add-outline"></ion-icon>
+                  <ion-icon name="car-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Create a profile</h3>
+                <h3 class="card-title">Consultez notre flotte de voitures</h3>
 
                 <p class="card-text">
-                  If you are going to use a passage of Lorem Ipsum, you need to be sure.
+                  Parcourez notre sélection de voitures disponibles avec chauffeur et choisissez celle qui correspond le mieux à vos besoins.
                 </p>
-
-                <a href="#" class="card-link">Get started</a>
 
               </div>
             </li>
@@ -865,13 +890,13 @@
               <div class="get-start-card">
 
                 <div class="card-icon icon-2">
-                  <ion-icon name="car-outline"></ion-icon>
+                  <ion-icon name="person-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Tell us what car you want</h3>
+                <h3 class="card-title">Réservez votre chauffeur</h3>
 
                 <p class="card-text">
-                  Various versions have evolved over the years, sometimes by accident, sometimes on purpose
+                  Choisissez votre voiture et réservez-le pour la date et l'heure de votre choix.
                 </p>
 
               </div>
@@ -881,14 +906,13 @@
               <div class="get-start-card">
 
                 <div class="card-icon icon-3">
-                  <ion-icon name="person-outline"></ion-icon>
+                  <ion-icon name="card-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Match with seller</h3>
+                <h3 class="card-title">Finalisez votre réservation</h3>
 
                 <p class="card-text">
-                  It to make a type specimen book. It has survived not only five centuries, but also the leap into
-                  electronic
+                  Finalisez votre réservation et préparez-vous à profiter d'un voyage confortable et sécurisé avec nos chauffeurs professionnels.
                 </p>
 
               </div>
@@ -898,13 +922,13 @@
               <div class="get-start-card">
 
                 <div class="card-icon icon-4">
-                  <ion-icon name="card-outline"></ion-icon>
+                  <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                 </div>
 
-                <h3 class="card-title">Make a deal</h3>
+                <h3 class="card-title">Besoin d'aide?</h3>
 
                 <p class="card-text">
-                  There are many variations of passages of Lorem available, but the majority have suffered alteration
+                  Si vous avez des questions ou avez besoin d'aide pour votre réservation, n'hésitez pas à nous contacter. Notre équipe est là pour vous aider.
                 </p>
 
               </div>
@@ -914,6 +938,7 @@
 
         </div>
       </section>
+
 
     </article>
   </main>
@@ -926,110 +951,11 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" >
     <div class="container">
 
       <div class="footer-top">
 
-        <div class="footer-brand">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Ridex logo">
-          </a>
-
-          <p class="footer-text">
-            Search for cheap rental cars in New York. With a diverse fleet of 19,000 vehicles, Waydex offers its
-            consumers an
-            attractive and fun selection.
-          </p>
-        </div>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Company</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About us</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Pricing plans</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Our blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contacts</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Support</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Help center</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Ask a question</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Privacy policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & conditions</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Neighborhoods in New York</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Manhattan</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Central New York City</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Upper East Side</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Queens</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Theater District</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Midtown</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">SoHo</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Chelsea</a>
-          </li>
-
-        </ul>
 
       </div>
 

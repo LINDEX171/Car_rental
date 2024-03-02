@@ -206,7 +206,7 @@
 
                   <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>Clients </a>
                     <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                      <li><a href="/client">ajouter</a></li>
+                     <!-- <li><a href="/client">ajouter</a></li> -->
                       <li><a href="/liste-client">lister</a></li>
                     </ul>
                   </li>
