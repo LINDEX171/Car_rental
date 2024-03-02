@@ -15,6 +15,7 @@ class VehiculeController extends Controller
         return view("vehicules.vehicule", compact('chauffeurs'));
     }
 
+    
 
     public function liste()
     {

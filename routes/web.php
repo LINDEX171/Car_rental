@@ -7,14 +7,21 @@ use App\Http\Controllers\VehiculeController;
 use App\Http\Controllers\ChauffeurController;
 use App\Http\Controllers\Auth\LoginController;
 
-Route::get('/',[VehiculeController::class,'showVehicule']);
 
+
+/*Route::get('/auth', function () {
+    return view('auth\dashboard');
+}); */
+
+Route::middleware(['auth'])->group(function () {
+
+Route::get('/auth',[ChauffeurController::class,'auth']);
 Route::get('/vehicule',[VehiculeController::class,'index']);
 Route::get('/liste-vehicule',[VehiculeController::class,'liste'])->name('liste');
 Route::post('/storevehicules',[VehiculeController::class,'store'])->name('enregistrerVehicule');
 Route::get('/update-vehicule/{id}',[VehiculeController::class,'updatevehicule']);
 Route::post('/updatestorevehicule',[VehiculeController::class,'updatestorevehicule']);
-Route::get('/delete-candidat/{id}',[VehiculeController::class,'deletevehicule']);
+Route::get('/delete-vehicule/{id}',[VehiculeController::class,'deletevehicule']);
 
 
 Route::get('/chauffeur',[ChauffeurController::class,'index']);
@@ -24,13 +31,29 @@ Route::get('/update-chauffeur/{id}',[ChauffeurController::class,'updatechauffeur
 Route::post('/updatestorechauffeur',[ChauffeurController::class,'updatestorechauffeur']);
 Route::get('/delete-chauffeur/{id}',[ChauffeurController::class,'deletechauffeur']);
 
-Route::get('/client',[ClientController::class,'index']);
 Route::get('/liste-client',[ClientController::class,'liste'])->name('liste3');
-Route::post('/storeclients',[ClientController::class,'store'])->name('enregistrerClient');
-Route::get('/update-client/{id}',[ClientController::class,'updateclient']);
 Route::post('/updatestoreclient',[ClientController::class,'updatestoreclient']);
 Route::get('/delete-client/{id}',[ClientController::class,'deleteclient']);
 
+
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@login');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+});
+
+
+
+
+Route::get('/',[VehiculeController::class,'showVehicule']);
+
+
+
+
+
+Route::get('/client',[ClientController::class,'index']);
+Route::post('/storeclients',[ClientController::class,'store'])->name('enregistrerClient');
+Route::get('/update-client/{id}',[ClientController::class,'updateclient']);
 Route::get('/payement',[ClientController::class,'index2']);
 
 
@@ -38,10 +61,5 @@ Route::get('/payement',[ClientController::class,'index2']);
 
 Auth::routes();
 
-Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
-Route::post('/login', 'Auth\LoginController@login');
-Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

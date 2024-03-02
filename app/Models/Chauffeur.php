@@ -18,6 +18,9 @@ class Chauffeur extends Model
 
     ];
 
+  
+
+
     public function vehicules()
     {
         return $this->hasMany(Vehicule::class);

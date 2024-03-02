@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Client;
 use App\Models\Vehicule;
+use App\Models\Chauffeur;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
@@ -25,10 +26,44 @@ class ClientController extends Controller
 
     public function liste()
     {
-        $vehicules = Vehicule::all();
         $client = Client::all();
-      return view("clients.liste-client", compact('client', 'vehicules'));
+        $vehicule = Vehicule::all();
+        $totalChauffeurs = $this->nombreChauffeurs();
+        $totalVehicules = $this->nombreVehicules();
+        $totalClients = $this->nombreClients();
+        $chauffeur = Chauffeur::all();
+      return view("clients.liste-client",  compact('chauffeur', 'client','vehicule', 'totalChauffeurs', 'totalClients', 'totalVehicules'));
     }
+
+    public function nombreChauffeurs()
+    {
+        $totalChauffeurs = Chauffeur::count();
+        return $totalChauffeurs;
+    }
+
+    public function nombreVehicules()
+    {
+        $totalVehicules = Vehicule::count();
+        return $totalVehicules;
+    }
+
+    public function nombreClients()
+    {
+        $totalClients = Client::count();
+        return $totalClients;
+    }
+
+    public function auth()
+    {
+        $client = Client::all();
+        $vehicule = Vehicule::all();
+        $chauffeurs = Chauffeur::all();
+        $totalChauffeurs = $this->nombreChauffeurs();
+        $totalVehicules = $this->nombreVehicules();
+        $totalClients = $this->nombreClients();
+        return view("auth.dashboard", compact('chauffeurs', 'client','vehicule', 'totalChauffeurs', 'totalClients', 'totalVehicules'));
+    }
+
 
     public function store(Request $request)
     {

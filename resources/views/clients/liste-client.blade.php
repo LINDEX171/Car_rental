@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des clients</title>
+    <title>Liste des véhicules</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-color: #f8f9fa; /* Couleur de fond */
+            background-color: #141515; /* Couleur de fond */
         }
 
         .container {
@@ -23,13 +23,19 @@
         }
 
         .table {
-            background-color: #fff; /* Couleur de fond de la table */
+            background-color: #3d3a3a; /* Couleur de fond de la table */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre de la table */
             border-radius: 10px;
         }
 
         .table th, .table td {
             text-align: center;
+            color: #101111;
+            background-color: #f7f2f3;
+        }
+
+        .table tbody tr {
+            background-color: white; /* Couleur de fond des lignes */
         }
 
         .btn {
@@ -41,13 +47,14 @@
         }
 
         .thead-dark {
-            background-color: #343a40; /* Couleur de fond de l'en-tête */
+            background-color: #f7f9fb; /* Couleur de fond de l'en-tête */
             color: #fff; /* Couleur du texte de l'en-tête */
         }
     </style>
 </head>
 <body>
-
+    @extends('auth.dashboard')
+    @section('content')
 <div class="container">
     <h2> liste-client</h2>
 
@@ -95,6 +102,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+@endsection
 </body>
 </html>

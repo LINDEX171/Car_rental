@@ -1,175 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>modificatin du vehicule </title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        *{
-       padding: 0;
-       margin: 0;
-       box-sizing: border-box;
-       font-family: sans-serif;
-     }
+  <meta charset="utf-8" />
+  <title>Modification Vehicule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    /* Ajoutez vos styles CSS ici */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f7f6;
+    }
 
-     body{
-       display: flex;
-       height: 100vh;
-       justify-content: center;
-       align-items: center;
-       background: url(bg-image.jpg);
-       background-size: cover;
-     }
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
 
-     .container{
-       width: 100%;
-       max-width: 650px;
-       background: rgba(218, 211, 211, 0.5);
-       padding: 28px;
-       margin: 0 28px;
-       border-radius: 10px;
-       box-shadow: inset -2px 2px 2px white;
-     }
+    .form-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
 
-     .form-title{
-       font-size: 26px;
-       font-weight: 600;
-       text-align: center;
-       padding-bottom: 6px;
-       color: white;
-       text-shadow: 2px 2px 2px black;
-       border-bottom: solid 1px white;
-     }
+    .user-input-box {
+        margin-bottom: 20px;
+    }
 
-     .main-user-info{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-between;
-       padding: 20px 0;
-     }
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
 
-     .user-input-box:nth-child(2n){
-       justify-content: end;
-     }
+    input[type="text"],
+    input[type="date"],
+    select,
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
-     .user-input-box{
-       display: flex;
-       flex-wrap: wrap;
-       width: 50%;
-       padding-bottom: 15px;
-     }
+    select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+        background-repeat: no-repeat;
+        background-position-x: 95%;
+        background-position-y: center;
+    }
 
-     .user-input-box label{
-       width: 95%;
-       color: rgb(41, 37, 37);
-       font-size: 20px;
-       font-weight: 400;
-       margin: 5px 0;
-     }
+    .form-submit-btn {
+        text-align: center;
+    }
 
-     .user-input-box input[type="text"],
-     .user-input-box input[type="date"],
-     .user-input-box select{
-       height: 40px;
-       width: 95%;
-       border-radius: 7px;
-       outline: none;
-       border: 1px solid grey;
-       padding: 0 10px;
-     }
-
-     .user-input-box input[type="file"]{
-       height: auto;
-     }
-
-     .gender-title{
-       color:white;
-       font-size: 24px;
-       font-weight: 600;
-       border-bottom: 1px solid white;
-     }
-
-     .gender-category{
-       margin: 15px 0;
-       color: white;
-     }
-
-     .gender-category label{
-       padding: 0 20px 0 5px;
-     }
-
-     .gender-category label,
-     .gender-category input,
-     .form-submit-btn input{
-       cursor: pointer;
-     }
-
-     .form-submit-btn{
-       margin-top: 40px;
-     }
-
-     .form-submit-btn input{
-       display: block;
-       width: 100%;
-       margin-top: 10px;
-       font-size: 20px;
-       padding: 10px;
-       border:none;
-       border-radius: 3px;
-       color: rgb(40, 32, 32);
-       background: rgba(47, 148, 215, 0.7);
-     }
-
-     .form-submit-btn input:hover{
-       background: rgba(37, 41, 38, 0.7);
-       color: rgb(255, 255, 255);
-     }
-
-     .error-message {
-         color: red;
-         font-size: 16px;
-         margin-top: 5px;
-     }
-
-     @media(max-width: 600px){
-       .container{
-           min-width: 280px;
-       }
-
-       .user-input-box{
-           margin-bottom: 12px;
-           width: 100%;
-       }
-
-       .user-input-box:nth-child(2n){
-           justify-content: space-between;
-       }
-
-       .gender-category{
-           display: flex;
-           justify-content: space-between;
-           width: 100%;
-       }
-
-       .main-user-info{
-           max-height: 380px;
-           overflow: auto;
-       }
-
-       .main-user-info::-webkit-scrollbar{
-           width: 0;
-       }
-
-
-     }
-
-    
-
-         </style>
+    .error-message {
+        color: red;
+        margin-bottom: 10px;
+    }
+  </style>
 </head>
 <body>
+  @extends('layouts.auth')
+
+  @section('content')
 
     <div class="container">
 
@@ -240,7 +144,7 @@
   </div>
 </div>
 <div class="form-submit-btn">
-  <input type="submit" value="enregistrer">
+  <input type="submit" value="modifier">
 </div>
 </form>
 </div>
@@ -248,7 +152,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-
+@endsection
 </body>
 
 </html>

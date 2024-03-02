@@ -33,6 +33,7 @@
   -->
 
   <header class="header" data-header>
+
     <div class="container">
 
       <div class="overlay" data-overlay></div>
@@ -77,9 +78,10 @@
           <span id="aria-label-txt">Explore cars</span>
         </a>
 
-        <a href="" class="btn user-btn" aria-label="Profile">
+        <a href="/login" class="btn user-btn" aria-label="Profile">
           <ion-icon name="person-outline"></ion-icon>
         </a>
+
 
         <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
           <span class="one"></span>
