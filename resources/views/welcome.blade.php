@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yobalema</title>
+  <title>YOBALEMA</title>
 
   <!--
     - favicon
@@ -109,7 +109,7 @@
         <div class="container">
 
           <div class="hero-content">
-            <h2 class="h1 hero-title">Yobalema</h2>
+            <h2 class="h1 hero-title">YOBALEMA</h2>
 
             <p class="hero-text">
                 Profitez de nos services dans tous les 14 régions du Sénegal !!!
@@ -184,7 +184,7 @@
                             </li>
                             <li class="card-list-item">
                                 <ion-icon name="speedometer-outline"></ion-icon>
-                                <span class="card-item-text">{{ $vehicule->kilometre }}km / 1-litre</span>
+                                <span class="card-item-text">{{ $vehicule->kilometre }}km </span>
                             </li>
                             <li class="card-list-item">
                                 <ion-icon name="hardware-chip-outline"></ion-icon>
@@ -212,6 +212,7 @@
         </ul>
     </div>
 </section>
+
 
 
 

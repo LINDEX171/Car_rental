@@ -22,8 +22,8 @@ $prix = $client->vehicule->prix*$client->heure;
          var prix = <?php echo json_encode($prix); ?>;
         function checkout() {
             CinetPay.setConfig({
-                apikey: '13662169265d8fe50983513.27794426',//   YOUR APIKEY
-                site_id: '5868967',//YOUR_SITE_ID
+                apikey: '198811067865f98b4c8cadf7.96677783',//   YOUR APIKEY
+                site_id: '5869941',//YOUR_SITE_ID
                 notify_url: 'http://mondomaine.com/notify/',
                 mode: 'PRODUCTION'
             });
