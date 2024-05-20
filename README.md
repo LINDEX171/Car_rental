@@ -6,7 +6,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
-## car rental fleet management project
+
 
 🚗💼 Introducing my car rental fleet management project! 💼🚗
 I'm excited to share a glimpse of a brand-new car rental fleet management project, designed to offer an innovative and dynamic user experience.
@@ -28,7 +28,7 @@ I am passionate about innovation and continuous improvement of my services, and 
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## car rental fleet management project
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
