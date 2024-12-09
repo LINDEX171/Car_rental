@@ -12,44 +12,10 @@ For Administrators:
 🔄 Real-time synchronization to ensure that every change made is immediately reflected in the user interface, thus providing complete transparency.
 I am passionate about innovation and continuous improvement of my services, and this project embodies my commitment to providing an exceptional experience.
 
+![photo_5929340427192877645_y](https://github.com/user-attachments/assets/a77d5835-394d-4d1c-b4d1-a14c9cfc4c93)
+![photo_5929340427192877646_y](https://github.com/user-attachments/assets/1fc1ad3c-f64f-4227-9351-040e4967eae0)
+![photo_5929340427192877647_y](https://github.com/user-attachments/assets/1ad1379a-a83b-43b4-ab87-b8bf4132d0d0)
+![photo_5929340427192877648_y](https://github.com/user-attachments/assets/013cccb8-ffd1-4b35-bfb9-9b7915ae9214)
+![photo_5929340427192877649_y](https://github.com/user-attachments/assets/4dc76694-98d0-452f-abb9-5195dcb8d76f)
 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## car rental fleet management project
-
-
-
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# LINDEX171-Gestion-de-Parc-Automobile-LouerMa
