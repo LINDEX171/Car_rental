@@ -8,7 +8,7 @@ For Customers:
 🎨 A user-friendly and intuitive interface to explore a fleet of available cars, with comprehensive details on each model including price, specifications, and even associated drivers.
 🚙 The ability to choose and book their ideal car in real-time, with integrated secure authentication and payment process.
 For Administrators:
-🛠️ The creation of a powerful dashboard to efficiently manage a fleet of cars, with features such as adding, modifying, and deleting cars, as well as managing drivers.
+🛠️The creation of a powerful dashboard to efficiently manage a fleet of cars, with features such as adding, modifying, and deleting cars, as well as managing drivers.
 🔄 Real-time synchronization to ensure that every change made is immediately reflected in the user interface, thus providing complete transparency.
 I am passionate about innovation and continuous improvement of my services, and this project embodies my commitment to providing an exceptional experience.
 
